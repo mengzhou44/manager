@@ -1,6 +1,6 @@
 import * as types from '../actions/types';
 
-const INITIAL_STATE = { email: '', password: '', user: {}, error: '' }
+const INITIAL_STATE = { email: 'test@test.com', password: 'password', user: {}, error: '' }
 
 export default (state = INITIAL_STATE, action) => {
 
