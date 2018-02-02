@@ -8,6 +8,8 @@ export default (state = INITIAL_STATE, action) => {
         case types.FIELD_CHANGED:
             const { prop, value } = action.payload;
             return { ...state, [prop]: value };
+        case types.EMPLOYEE_FORM_RESET:
+            return { ...INITIAL_STATE }
         default:
             return state;
     }
